@@ -1,8 +1,8 @@
-const express = require('C:/Users/a1/AppData/Roaming/npm/node_modules/express');
+const express = require('express');
 const connectDB = require('./connect')
-const cors = require('C:/Users/a1/AppData/Roaming/npm/node_modules/cors');
-const bodyParser = require('C:/Users/a1/AppData/Roaming/npm/node_modules/body-parser');
-require('C:/Users/a1/AppData/Roaming/npm/node_modules/dotenv').config()
+const cors = require('cors');
+const bodyParser = require('body-parser');
+require('dotenv').config()
 const path = require('path');
 const app = express()
 const port = process.env.SERVER_PORT
