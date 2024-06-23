@@ -15,6 +15,22 @@
     </style>
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        @media only screen and (max-width:782px) {
+            .code-con-pr {
+                padding: 0.5rem !important;
+                margin: 0.5rem !important;
+            }
+
+            .code-con-sub-code {
+                padding-right: 1.5rem !important;
+                padding-left: 0.5rem !important;
+                margin-left: 0.5rem !important;
+                margin-right: 2rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -71,15 +87,15 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <p class="fs-4 mb-0" style="letter-spacing: 2px;font-weight: bold;">GET</p>
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <p class="fs-5">Retrieve all available records using <strong class="bg-info px-1">/news</strong>
                             endpoint with CORS Headers.</p>
-                        <div class="container text-bg-dark p-4 m-4 w-auto rounded">
+                        <div class="code-con-pr container text-bg-dark p-4 m-4 w-auto rounded">
                             <div class="container mb-4 border-bottom pb-2">
                                 <div class="row">
                                     <div class="col align-self-start">
@@ -95,7 +111,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="container mx-4 px-4">
+                            <div class="code-con-sub-code container mx-4 px-4">
                                 <strong>
                                     <pre class="copied">let p = fetch("https://vapi-uxd9.onrender.com/news")
 p.then((response) => {
@@ -127,7 +143,7 @@ p.then((response) => {
                         <p class="fs-5">Retrieve record of given id using <strong
                                 class="bg-info px-1">/news/:id</strong>
                             endpoint with CORS Headers.</p>
-                        <div class="container text-bg-dark p-4 m-4 w-auto rounded">
+                        <div class="code-con-pr container text-bg-dark p-4 m-4 w-auto rounded">
                             <div class="container mb-4 border-bottom pb-2">
                                 <div class="row">
                                     <div class="col align-self-start">
@@ -143,7 +159,7 @@ p.then((response) => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="container mx-4 px-4">
+                            <div class="code-con-sub-code container mx-4 px-4">
                                 <strong>
                                     <pre class="copied">let p = fetch("https://vapi-uxd9.onrender.com/news/3")
 p.then((response) => {
@@ -174,7 +190,7 @@ p.then((response) => {
                     <div class="accordion-body">
                         <p class="fs-5">Create a new record using <strong class="bg-info px-1">/news</strong>
                             endpoint with CORS Headers in <em><b>post method.</b></em></p>
-                        <div class="container text-bg-dark p-4 m-4 w-auto rounded">
+                        <div class="code-con-pr container text-bg-dark p-4 m-4 w-auto rounded">
                             <div class="container mb-4 border-bottom pb-2">
                                 <div class="row">
                                     <div class="col align-self-start">
@@ -190,7 +206,7 @@ p.then((response) => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="container mx-4 px-4">
+                            <div class="code-con-sub-code container mx-4 px-4">
                                 <strong>
                                     <pre class="copied">let p=fetch('https://vapi-uxd9.onrender.com/news',{
     method:'POST',
@@ -231,7 +247,7 @@ p.then((response)=>{
                     <div class="accordion-body">
                         <p class="fs-5">Update a record using <strong class="bg-info px-1">/news</strong>
                             endpoint with CORS Headers in <em><b>put method.</b></em></p>
-                        <div class="container text-bg-dark p-4 m-4 w-auto rounded">
+                        <div class="code-con-pr container text-bg-dark p-4 m-4 w-auto rounded">
                             <div class="container mb-4 border-bottom pb-2">
                                 <div class="row">
                                     <div class="col align-self-start">
@@ -247,7 +263,7 @@ p.then((response)=>{
                                     </div>
                                 </div>
                             </div>
-                            <div class="container mx-4 px-4">
+                            <div class="code-con-sub-code container mx-4 px-4">
                                 <strong>
                                     <pre class="copied">let p=fetch('https://vapi-uxd9.onrender.com/news',{
     method:'PUT',
@@ -288,7 +304,7 @@ p.then((response)=>{
                         <p class="fs-5">Delete a record with help of news id using <strong
                                 class="bg-info px-1">/news</strong>
                             endpoint with CORS Headers in <em><b>delete method.</b></em></p>
-                        <div class="container text-bg-dark p-4 m-4 w-auto rounded">
+                        <div class="code-con-pr container text-bg-dark p-4 m-4 w-auto rounded">
                             <div class="container mb-4 border-bottom pb-2">
                                 <div class="row">
                                     <div class="col align-self-start">
@@ -304,7 +320,7 @@ p.then((response)=>{
                                     </div>
                                 </div>
                             </div>
-                            <div class="container mx-4 px-4">
+                            <div class="code-con-sub-code container mx-4 px-4">
                                 <strong>
                                     <pre class="copied">let p=fetch('https://vapi-uxd9.onrender.com/news',{
     method:'DELETE',
