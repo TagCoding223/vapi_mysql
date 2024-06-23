@@ -1,4 +1,4 @@
-const mysql = require('C:/Users/a1/AppData/Roaming/npm/node_modules/mysql');
+const mysql = require('mysql');
 
 
 const connectDB = () => {
