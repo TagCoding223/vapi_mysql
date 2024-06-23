@@ -1,0 +1,20 @@
+{
+  "name": "vapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Vishal Chouhan",
+  "license": "ISC",
+  "dependencies":{
+    "express": "express@4.19.2",
+    "mysql":"mysql@2.18.1",
+    "cors":"cors@2.8.5",
+    "dotenv":"dotenv@16.4.5",
+    "body-parser":"body-parser@1.20.2"
+  }
+}
